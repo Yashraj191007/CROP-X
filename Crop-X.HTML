@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CROP-X</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fef9c3, #bbf7d0);
+            font-family: 'Inter', sans-serif;
+        }
+        .feature-card {
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+        .feature-title {
+            font-weight: 600;
+            color: #047857;
+        }
+        .header-text span {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start">
+
+    <header class="text-center py-6 w-full px-4 sm:px-6 lg:px-8 max-w-6xl">
+        <div class="flex justify-end mb-4">
+            <select id="language-select" class="border rounded px-2 py-1 text-sm">
+                <option value="en">English</option>
+                <option value="mr">Marathi</option>
+                <option value="pa">Punjabi</option>
+            </select>
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-green-800 drop-shadow-lg header-text">
+            🌱 CROP-X
+        </h1>
+        <p id="header-desc" class="mt-2 text-base sm:text-lg text-gray-700">Smart Tools for Small Farmers</p>
+    </header>
+
+    <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 sm:p-6 w-full max-w-6xl">
+
+        <a href="https://luxury-eclair-600171.netlify.app/" target="_blank" class="feature-card bg-white rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col items-center text-center">
+            <img src="https://img.icons8.com/fluency/96/soil.png" alt="Soil Testing Lab" class="w-24 h-24" />
+            <h3 class="mt-2 sm:mt-4 text-lg sm:text-xl feature-title" data-en="Locate Soil Testing Labs" data-mr="मृदा चाचणी लॅब शोधा" data-pa="ਮਿੱਟੀ ਟੈਸਟਿੰਗ ਲੈਬ ਲੱਭੋ">Locate Soil Testing Labs</h3>
+        </a>
+
+        <a href="https://cropx.onhercules.app/" target="_blank" class="feature-card bg-white rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col items-center text-center">
+            <img src="https://img.icons8.com/fluency/96/wheat.png" alt="Smart Crop" class="w-24 h-24" />
+            <h3 class="mt-2 sm:mt-4 text-lg sm:text-xl feature-title" data-en="Smart Crop Suggestion" data-mr="स्मार्ट पीक सुचवण" data-pa="ਸਮਾਰਟ ਫਸਲ ਸੁਝਾਅ">Smart Crop Suggestion</h3>
+        </a>
+
+        <a href="https://68c30dc82db66c50f7ab3f6d--precious-tapioca-a62320.netlify.app/" target="_blank" class="feature-card bg-white rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col items-center text-center">
+            <img src="https://img.icons8.com/fluency/96/cloud.png" alt="Weather Forecast" class="w-24 h-24" />
+            <h3 class="mt-2 sm:mt-4 text-lg sm:text-xl feature-title" data-en="14-Day Weather Forecast" data-mr="14 दिवस हवामान अंदाज" data-pa="14-ਦਿਨ ਮੌਸਮ ਅਨੁਮਾਨ">14-Day Weather Forecast</h3>
+        </a>
+
+        <a href="https://jovial-mooncake-3e272e.netlify.app/" target="_blank" class="feature-card bg-white rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col items-center text-center">
+            <img src="https://img.icons8.com/fluency/96/shopping-cart.png" alt="Online Store" class="w-24 h-24" />
+            <h3 class="mt-2 sm:mt-4 text-lg sm:text-xl feature-title" data-en="Online Store" data-mr="ऑनलाइन स्टोर" data-pa="ਆਨਲਾਈਨ ਸਟੋਰ">Online Store</h3>
+        </a>
+
+        <a href="https://playful-druid-91e70b.netlify.app/" target="_blank" class="feature-card bg-white rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col items-center text-center">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23059669' stroke='%23059669' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 19.5A2.5 2.5 0 016.5 17H20V6.5A2.5 2.5 0 0117.5 4H6.5A2.5 2.5 0 004 6.5V19.5z'/%3E%3Cpath d='M10 10l-4 4m0-4l4 4'/%3E%3C/svg%3E" alt="Government Schemes" class="w-24 h-24" />
+            <h3 class="mt-2 sm:mt-4 text-lg sm:text-xl feature-title" data-en="Govt Schemes & Crop Insurance" data-mr="सरकारी योजना व पीक विमा" data-pa="ਸਰਕਾਰੀ ਯੋਜਨਾ ਅਤੇ ਫਸਲ ਬੀਮਾ">Govt Schemes & Crop Insurance</h3>
+        </a>
+
+        <a href="https://industrious-seaturtle.static.domains/find-my-helper" target="_blank" class="feature-card bg-white rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col items-center text-center">
+            <img src="https://img.icons8.com/fluency/96/worker-male.png" alt="Find Helper" class="w-24 h-24" />
+            <h3 class="mt-2 sm:mt-4 text-lg sm:text-xl feature-title" data-en="Find a Helper" data-mr="मदतगार शोधा" data-pa="ਸਹਾਇਕ ਲੱਭੋ">Find a Helper</h3>
+        </a>
+
+        <a href="https://gorgeous-genie-77ef46.netlify.app/" target="_blank" class="feature-card bg-white rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col items-center text-center">
+            <img src="https://img.icons8.com/fluency/96/group.png" alt="Community" class="w-24 h-24" />
+            <h3 class="mt-2 sm:mt-4 text-lg sm:text-xl feature-title" data-en="Farmers Community" data-mr="शेतकरी समुदाय" data-pa="ਕਿਸਾਨ ਸਮੁਦਾਇ">Farmers Community</h3>
+        </a>
+
+        <a href="https://formidable-azure-vj5iycljpt.edgeone.app/" target="_blank" class="feature-card bg-white rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col items-center text-center">
+            <img src="https://img.icons8.com/fluency/96/tractor.png" alt="Machinery" class="w-24 h-24" />
+            <h3 class="mt-2 sm:mt-4 text-lg sm:text-xl feature-title" data-en="Machinery & Tools Rent" data-mr="यंत्रसामग्री व उपकरण भाडे" data-pa="ਮਸ਼ੀਨਰੀ ਅਤੇ ਟੂਲ ਕਿਰਾਏ">Machinery & Tools Rent</h3>
+        </a>
+
+        <a href="https://www.msamb.com/ApmcDetail/APMCPriceInformation" target="_blank" class="feature-card bg-white rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col items-center text-center">
+            <img src="https://img.icons8.com/fluency/96/price-tag.png" alt="Market Prices" class="w-24 h-24" />
+            <h3 class="mt-2 sm:mt-4 text-lg sm:text-xl feature-title" data-en="Market Prices" data-mr="बाजार किंमत" data-pa="ਬਾਜ਼ਾਰ ਕੀਮਤ">Market Prices</h3>
+        </a>
+
+        <a href="https://scintillating-speculoos-7b59e1.netlify.app/" target="_blank" class="feature-card bg-white rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col items-center text-center">
+            <img src="https://img.icons8.com/fluency/96/contract.png" alt="Contract Farming" class="w-24 h-24" />
+            <h3 class="mt-2 sm:mt-4 text-lg sm:text-xl feature-title" data-en="Contract Farming Guidance" data-mr="करार शेती मार्गदर्शन" data-pa="ਠੇਕੇਦਾਰੀ ਖੇਤੀ ਮਾਰਗਦਰਸ਼ਨ">Contract Farming Guidance</h3>
+        </a>
+
+    </main>
+
+    <script>
+        const langSelect = document.getElementById('language-select');
+        langSelect.addEventListener('change', () => {
+            const lang = langSelect.value;
+            document.querySelectorAll('.feature-title').forEach(el => {
+                el.textContent = el.dataset[lang];
+            });
+            const headerDesc = document.getElementById('header-desc');
+            headerDesc.textContent = lang === 'mr' ? 'लहान शेतकऱ्यांसाठी स्मार्ट साधने' :
+                                     lang === 'pa' ? 'ਛੋਟੇ ਕਿਸਾਨਾਂ ਲਈ ਸਮਾਰਟ ਟੂਲ' : 'Smart Tools for Small Farmers';
+        });
+    </script>
+
+</body>
+</html>
